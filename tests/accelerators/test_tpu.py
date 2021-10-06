@@ -239,8 +239,8 @@ def test_device_stats_tpu(tmpdir):
 
     for f in fields:
         assert any(f in h for h in tpu_stats.keys())
-        
-        
+
+
 @RunIf(tpu=True)
 def test_auto_parameters_tying_tpus(tmpdir):
 
